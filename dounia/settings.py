@@ -32,7 +32,7 @@ EMAIL_PORT= 587
 EMAIL_HOST_USER = "darijadeutsch@gmail.com"
 EMAIL_HOST_PASSWORD ="hamzakerstin1994"
 EMAIL_USE_TLS=True
-ALLOWED_HOSTS = ['dounia02.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['dounia02.herokuapp.com']
 
 
 # Application definitio
