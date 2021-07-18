@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'patient',
     'crispy_forms',
-    'contact',
+  
     'dounia',
 
 ]
