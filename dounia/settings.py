@@ -89,10 +89,10 @@ DATABASES = {
 # configuration dial data bas diali
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd2c29hk05njhce',
-        'USER': 'qiynykgthckzxv',
-        'PASSWORD': 'aaae3a4d6175db045352621f6e3417664ae83e6a445752df82a0f882eb66b1ae',
-        'HOST': 'ec2-35-172-16-31.compute-1.amazonaws.com',
+        'NAME': 'dfbrubpbmgcfs9',
+        'USER': 'euitewkixtfxop',
+        'PASSWORD': '2ae650dd4fbef8028e50c82a426ba69768a1afaf9e3d2ce46c6005c7845276fe',
+        'HOST': 'ec2-52-1-20-236.compute-1.amazonaws.com',
         'PORT': '5432'
     }
 }
