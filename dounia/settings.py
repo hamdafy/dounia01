@@ -88,7 +88,7 @@ WSGI_APPLICATION = 'dounia.wsgi.application'
 DATABASES = {
 # configuration dial data bas diali
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'dfbrubpbmgcfs9',
         'USER': 'euitewkixtfxop',
         'PASSWORD': '2ae650dd4fbef8028e50c82a426ba69768a1afaf9e3d2ce46c6005c7845276fe',
