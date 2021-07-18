@@ -1,0 +1,25 @@
+
+{% extends "patiernt/base.html" %}
+{% load static %}
+ {% block content %}
+{% load crispy_forms_tags %}
+<form method="post" action="/">
+    {% csrf_token %}
+  <div class="form-group">
+
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email">
+
+  </div>
+
+
+   <div class="form-group">
+    <label for="exampleFormControlTextarea1">en</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" name="message"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">karim00</button>
+</form>
+
+
+
+{% endblock content %}

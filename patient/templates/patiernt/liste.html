@@ -1,0 +1,58 @@
+{% extends "patiernt/base.html" %}
+ {% block content %}
+{% load crispy_forms_tags %}
+
+<table class="table table-borderless">
+    <thead class="border-bottom font-weight-bold">
+
+
+
+        <tr>
+         <div class="row">
+
+            <td class="col-lg-2   col-md-2  col-sm-2 col-2"> Name</td>
+            <td class="col-lg-2   col-md-2  col-sm-2 col-2"> vorname</td>
+            <td class="col-lg-1   col-md-1  col-sm-1 col-1">alter</td>
+
+             <td class="col-lg-5   col-md-5  col-sm-5 col-5">motif de visite</td>
+             <td>
+                <a   href="/patient/ajouter " class="btn btn-outline-success">
+                    <i class="fas fa-plus" href=""></i> Add New
+                </a>
+            </td>
+            </div>
+        </tr>
+
+
+
+
+
+
+    </thead>
+
+
+     <tbody>
+        {% for hamza  in liste %}
+            <tr>
+                <td>{{hamza.vorname}}</td>
+                <td>{{hamza.name}}</td>
+                <td>{{hamza.alter}}</td>
+
+                   <td>{{hamza.motif}}</td>
+                <td>
+                  <a href="{% url 'editer' hamza.id %}" class="btn text-secondary px-0">
+                        <i class="far fa-edit fa-lg"></i>
+                    </a>
+
+                    <form action="{% url 'patient_delete' hamza.id %}" method="post" class="d-inline">
+                        {% csrf_token %}
+                        <button type="submit" class="btn">
+                            <i class="far fa-trash-alt fa-lg text-danger float-right"></i>
+                        </button>
+                    </form>
+             </td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock content %}
