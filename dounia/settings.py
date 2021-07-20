@@ -85,17 +85,6 @@ WSGI_APPLICATION = 'dounia.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-# configuration dial data bas diali
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'dfbrubpbmgcfs9',
-        'USER': 'euitewkixtfxop',
-        'PASSWORD': '2ae650dd4fbef8028e50c82a426ba69768a1afaf9e3d2ce46c6005c7845276fe',
-        'HOST': 'ec2-52-1-20-236.compute-1.amazonaws.com',
-        'PORT': '5432'
-    }
-}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -145,3 +134,4 @@ STATICFILES_DIRS=[
     os.path.join(BASE_DIR,'static'),
 ]
 STATICFILES_STORAGE='whitenoise.storage.CompressedManifestStaticFilesStorage'
+django_heroku.settings(locals())
